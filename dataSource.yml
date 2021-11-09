@@ -1,0 +1,6 @@
+datasource:
+  enable: true
+  list:
+    - APP_UX_DATA_MIN
+
+

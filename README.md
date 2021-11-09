@@ -3,9 +3,7 @@
     表名                聚合后的行数               sgement的大小 
     
 APP_UX_DATA_MIN		maxRowsPerSegment:1500000	    670MB
-
-
-
+APP_UX_DATA_HOUR    maxRowsPerSegment:1400000       670MB
 
 
 ````
