@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"gopkg.in/ini.v1"
@@ -14,6 +13,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 	"tingyun-compact-segment/tools"
@@ -30,7 +30,7 @@ type Compaction struct {
 	Type                   string `json:"type"`
 	DataSource             string `json:"dataSource"`
 //	SegmentGranularity	   string   `json:"segmentGranularity"`
-	taskPriority int	 	  `json:"taskPriority"`
+//	taskPriority int	 	  `json:"taskPriority"`
 	Interval     string       `json:"interval"`
 	TuningConfig TuningConfig `json:"tuningConfig"`
 	Context      Context      `json:"context"`
@@ -45,6 +45,10 @@ type TuningConfig struct {
 //context
 type Context struct {
 	Opts          string `json:"druid.indexer.runner.javaOpts"`
+	ProcessThread int64  `json:"druid.indexer.fork.property.druid.processing.numThreads"`
+	MergeThread   int64  `json:"druid.indexer.fork.property.druid.processing.numMergeBuffers"`
+	PoolBytes     int64  `json:"druid.indexer.fork.property.druid.processing.buffer.sizeBytes"`
+
 }
 
 //解析dataSource
@@ -215,7 +219,7 @@ func FormatSpecBeforePost(datasource string,interval string) string {
 		Type:						"compact",
 		DataSource:					datasource,
 		Interval:					interval,
-		taskPriority:				100,
+//		taskPriority:				100,
 		TuningConfig:				tuningCongfig,
 		Context:					contexts,
 	}
@@ -233,17 +237,31 @@ func GetTaskTnterval(dataSource string) string {
 			logs.Error("获取interval时出现错误，错误信息：", err)
 		}
 	}()
-	startTime, err := ParseConfig(dataSource, "startTime")
-	if err != nil {
-		panic(err)
-	}
-	endTime, err := ParseConfig(dataSource, "endTime")
-	if err != nil {
-		panic(err)
-	}
-	timStr := startTime+"T00:00:00.000Z/" + endTime + "T00:00:00.000Z"
+	if strings.HasSuffix(dataSource, "_DAY") || dataSource == "APP_DEVICE_DATA_MIN"{
+			startTime, err := ParseConfig(dataSource, "startTime")
+			if err != nil {
+				panic(err)
+			}
+			endTime, err := ParseConfig(dataSource, "endTime")
+			if err != nil {
+				panic(err)
+			}
+			timStr := startTime+"T16:00:00.000Z/" + endTime + "T16:00:00.000Z"
 
-	return timStr
+			return timStr
+	}else {
+			startTime, err := ParseConfig(dataSource, "startTime")
+			if err != nil {
+				panic(err)
+			}
+			endTime, err := ParseConfig(dataSource, "endTime")
+			if err != nil {
+				panic(err)
+			}
+			timStr := startTime+"T00:00:00.000Z/" + endTime + "T00:00:00.000Z"
+
+			return timStr
+	}
 }
 
 // 已经部署后时获取segments interval 时间
@@ -306,23 +324,37 @@ func GetContext() Context {
 	if err != nil {
 		panic(err)
 	}
-
+	processThread, err := ParseConfig("jvm", "processThread")
+	if err != nil {
+		panic(err)
+	}
+	processThreadInt, err := strconv.ParseInt(processThread, 10, 64)
+	if err != nil {
+		panic(err)
+	}
+	mergeThread, err := ParseConfig("jvm", "mergeThread")
+	if err != nil {
+		panic(err)
+	}
+	mergeThreadInt, err := strconv.ParseInt(mergeThread, 10, 64)
+	if err != nil {
+		panic(err)
+	}
+	poolBytes, err := ParseConfig("jvm", "poolBytes")
+	if err != nil {
+		panic(err)
+	}
+	poolBytesInt, err := strconv.ParseInt(poolBytes, 10, 64)
+	if err != nil {
+		panic(err)
+	}
 	context := Context{
 		Opts:          "-server -Xms" + xms + " -Xmx" + xmx + " -XX:MaxDirectMemorySize=" + direct,
+		ProcessThread: processThreadInt,
+		MergeThread:   mergeThreadInt,
+		PoolBytes:     poolBytesInt,
 	}
 	return context
-}
-
-//获取当前时间与上一次提交的task时间间隔,避免compact task interval超前
-func GetNowTimeAndCompactTaskTimeTnterval() bool {
-	defer func() {
-		if err := recover(); err != nil {
-			logs.Error("当前时间与上一提交compact task时间比对失败: ", err)
-		}
-	}()
-
-
-	return true
 }
 
 //提交task
@@ -365,7 +397,6 @@ func SubmitTaskToDruidCompactSegments(){
 					cont :=FormatSpecBeforePost(dataSources,timStr)
 					compactId:=SubmitOverlordTask(cont)
 					intervalSplit:=strings.Split(timStr,"/")
-					fmt.Println(startSubmitCompactTaskTime,dataSources,intervalSplit[0],intervalSplit[1],intervalSplit[1][:10])
 					InsertCompactId(startSubmitCompactTaskTime,dataSources,compactId,intervalSplit[0],intervalSplit[1],intervalSplit[1][:10])
 					logs.Info(dataSources,"提交compact task : ",cont)
 				}

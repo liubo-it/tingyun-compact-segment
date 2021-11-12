@@ -1,6 +1,6 @@
 datasource:
   enable: true
   list:
-    - APP_UX_DATA_MIN
+    - BRS_PAGE_DAY
 
 
