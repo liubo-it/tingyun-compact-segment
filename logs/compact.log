@@ -356,3 +356,182 @@
 2021/11/11 17:23:57.587 [I]  开始定时查询task是否完成,提交新compact task...
 2021/11/11 18:02:49.103 [I]  Listening on   192.168.4.20 :10070
 2021/11/11 20:54:12.339 [I]  Listening on   192.168.4.20 :10070
+2021/11/13 10:30:27.185 [I]  Listening on   192.168.255.14 :10070
+2021/11/13 10:31:27.189 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:31:27.368 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:31:32.486 [E]  <nil> 
+2021/11/13 10:31:32.486 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:31:32.486 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:31:32.643 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:31:32.643 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:32:27.189 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:32:27.353 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:32:27.411 [E]  <nil> 
+2021/11/13 10:32:27.411 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:32:27.411 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:32:27.568 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:32:27.568 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:33:27.191 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:33:27.355 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:33:32.415 [E]  <nil> 
+2021/11/13 10:33:32.415 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:33:32.415 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:33:32.578 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:33:32.578 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:34:27.188 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:34:27.346 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:34:32.405 [E]  <nil> 
+2021/11/13 10:34:32.405 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:34:32.405 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:34:32.568 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:34:32.568 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:35:27.190 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:35:27.352 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:35:27.411 [E]  <nil> 
+2021/11/13 10:35:27.411 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:35:27.411 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:35:27.567 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:35:27.567 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:36:08.378 [I]  Listening on   192.168.255.14 :10070
+2021/11/13 10:37:08.380 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:37:08.544 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:37:10.265 [E]  <nil> 
+2021/11/13 10:37:10.265 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:37:10.265 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:37:10.428 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:37:10.429 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:38:08.382 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:38:08.547 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:38:08.605 [E]  <nil> 
+2021/11/13 10:38:08.605 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:38:08.605 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:38:08.765 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:38:08.765 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:39:08.384 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:39:08.547 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:39:08.607 [E]  <nil> 
+2021/11/13 10:39:08.607 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:39:08.607 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:39:08.763 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:39:08.763 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:40:08.383 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:40:08.547 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:40:08.605 [E]  <nil> 
+2021/11/13 10:40:08.605 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:40:08.605 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:40:08.761 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:40:08.761 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:41:08.384 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:41:08.553 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:41:08.612 [E]  <nil> 
+2021/11/13 10:41:08.612 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:41:08.612 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:41:08.767 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:41:08.768 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:42:08.387 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:42:08.550 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:42:08.609 [E]  <nil> 
+2021/11/13 10:42:08.610 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:42:08.610 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:42:08.768 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:42:08.768 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:43:08.387 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:43:08.550 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:43:08.608 [E]  <nil> 
+2021/11/13 10:43:08.608 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:43:08.608 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:43:08.763 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:43:08.763 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:44:08.387 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:44:08.551 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:44:08.609 [E]  <nil> 
+2021/11/13 10:44:08.609 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:44:08.609 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:44:08.766 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:44:08.767 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:45:08.388 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:45:08.551 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:45:08.610 [E]  <nil> 
+2021/11/13 10:45:08.611 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:45:08.611 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:45:08.767 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:45:08.767 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:46:08.393 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:46:08.553 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:46:08.613 [E]  <nil> 
+2021/11/13 10:46:08.613 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:46:08.613 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:46:08.773 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:46:08.773 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:47:08.394 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:47:08.555 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:47:08.613 [E]  <nil> 
+2021/11/13 10:47:08.613 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:47:08.613 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:47:08.768 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:47:08.768 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:48:08.392 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:48:08.554 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:48:08.614 [E]  <nil> 
+2021/11/13 10:48:08.614 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:48:08.615 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:48:08.772 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:48:08.772 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:49:08.392 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:49:08.553 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:49:08.613 [E]  <nil> 
+2021/11/13 10:49:08.613 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:49:08.613 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:49:08.771 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:49:08.771 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","segmentGranularity":{"type":"","period":"","timeZone":"","origin":""},"interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:49:38.751 [I]  Listening on   192.168.255.14 :10070
+2021/11/13 10:50:38.755 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:50:38.924 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:50:39.039 [E]  <nil> 
+2021/11/13 10:50:39.039 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:50:39.039 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:50:39.196 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:50:39.196 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:51:38.756 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:51:38.918 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:51:38.977 [E]  <nil> 
+2021/11/13 10:51:38.977 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:51:38.977 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:51:39.130 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:51:39.130 [I]  BRS_PAGE_MIN 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_MIN","interval":"2021-10-29T00:00:00.000Z/2021-10-30T00:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:51:48.576 [I]  Listening on   192.168.255.14 :10070
+2021/11/13 10:52:48.580 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:52:48.748 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:52:48.861 [E]  <nil> 
+2021/11/13 10:52:48.861 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:52:48.861 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:52:49.018 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:52:49.018 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:53:48.583 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:53:48.745 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:53:48.804 [E]  <nil> 
+2021/11/13 10:53:48.804 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:53:48.804 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:53:48.960 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:53:48.960 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:54:48.583 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:54:48.748 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:54:48.806 [E]  <nil> 
+2021/11/13 10:54:48.806 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:54:48.806 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:54:48.964 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:54:48.965 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:55:48.581 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:55:48.746 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:55:48.805 [E]  <nil> 
+2021/11/13 10:55:48.805 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:55:48.805 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:55:48.962 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:55:48.963 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}
+2021/11/13 10:56:48.584 [I]  开始定时查询task是否完成,提交新compact task...
+2021/11/13 10:56:48.749 [E]  查询taskId出错:  Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:56:48.809 [E]  <nil> 
+2021/11/13 10:56:48.809 [E]  http请求异常，返回值错误 Post http://base-druid-95:8090/druid/indexer/v1/task: dial tcp: lookup base-druid-95: no such host 或者返回状态码非200. 
+2021/11/13 10:56:48.809 [E]  向overlord发送task时出现错误，错误信息： runtime error: invalid memory address or nil pointer dereference
+2021/11/13 10:56:48.966 [E]  插入数据库出现错误，错误信息： Error 1044: Access denied for user 'lens'@'%' to database 'compact'
+2021/11/13 10:56:48.967 [I]  BRS_PAGE_DAY 当前数据库查询为空,提交初始compact task :  {"type":"compact","dataSource":"BRS_PAGE_DAY","segmentGranularity":{"type":"period","period":"P1D","timeZone":"Asia/Shanghai","origin":"2012-02-01T00:00:00+08:00"},"interval":"2021-10-29T16:00:00.000Z/2021-10-30T16:00:00.000Z","tuningConfig":{"type":"index","maxRowsPerSegment":1500000,"maxBytesInMemory":-1,"maxTotalRows":1500000},"context":{"druid.indexer.runner.javaOpts":"-server -Xms1g -Xmx2g -XX:MaxDirectMemorySize=10240g","druid.indexer.fork.property.druid.processing.numThreads":2,"druid.indexer.fork.property.druid.processing.numMergeBuffers":1,"druid.indexer.fork.property.druid.processing.buffer.sizeBytes":200000000}}

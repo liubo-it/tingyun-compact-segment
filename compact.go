@@ -9,6 +9,7 @@ import (
 	"tingyun-compact-segment/utils"
 )
 
+//初始化log
 func init ()  {
 	beego.SetLogger(logs.AdapterFile, `{"filename":"logs/compact.log"}`)
 	logs.SetLogger(logs.AdapterFile,`{"level":7,"maxlines":0,"maxsize":0,"daily":true,"maxdays":10,"color":true}`)
@@ -21,7 +22,7 @@ func main() {
 	kingpin.Parse()
 	logs.Info("Listening on  ",utils.GetLoaclIp(),*listenAddress)
 
-	//执行compact操作
+	//每分钟执行compact操作
 	go func() {
 		ticker := time.NewTicker(time.Minute * 1)
 			for {

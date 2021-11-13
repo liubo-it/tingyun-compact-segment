@@ -29,11 +29,19 @@ import (
 type Compaction struct {
 	Type                   string `json:"type"`
 	DataSource             string `json:"dataSource"`
-//	SegmentGranularity	   string   `json:"segmentGranularity"`
+	//	taskPriority int	 	  `json:"taskPriority"`
+	Interval     			string `json:"interval"`
+	TuningConfig 			TuningConfig `json:"tuningConfig"`
+	Context     			Context `json:"context"`
+}
+type CompactionDay struct {
+	Type                   string `json:"type"`
+	DataSource             string `json:"dataSource"`
+	SegmentGranularity	   SegmentGranularity   `json:"segmentGranularity"`
 //	taskPriority int	 	  `json:"taskPriority"`
-	Interval     string       `json:"interval"`
-	TuningConfig TuningConfig `json:"tuningConfig"`
-	Context      Context      `json:"context"`
+	Interval     			string `json:"interval"`
+	TuningConfig 			TuningConfig `json:"tuningConfig"`
+	Context     			Context `json:"context"`
 }
 //tuningConfig
 type TuningConfig struct {
@@ -49,6 +57,13 @@ type Context struct {
 	MergeThread   int64  `json:"druid.indexer.fork.property.druid.processing.numMergeBuffers"`
 	PoolBytes     int64  `json:"druid.indexer.fork.property.druid.processing.buffer.sizeBytes"`
 
+}
+//SegmentGranularity
+type SegmentGranularity struct {
+	Type 		string  `json:"type"`
+	Period 		string  `json:"period"`
+	TimeZone    string	`json:"timeZone"`
+	Origin      string  `json:"origin"`
 }
 
 //解析dataSource
@@ -206,29 +221,51 @@ func SubmitOverlordTask(content string) string {
 	}
 	return taskID["task"]
 }
-
-func FormatSpecBeforePost(datasource string,interval string) string {
+//拼装compact task  template
+func FormatSpecBeforePost(dataSource string,interval string) string {
 	defer func() {
 		if err := recover(); err != nil {
 			logs.Error("解析结构体拼接模版：", err)
 		}
 	}()
-	contexts := GetContext()
-	tuningCongfig :=GetTuningConfig(datasource)
-	compaction :=Compaction{
-		Type:						"compact",
-		DataSource:					datasource,
-		Interval:					interval,
-//		taskPriority:				100,
-		TuningConfig:				tuningCongfig,
-		Context:					contexts,
+	if strings.HasSuffix(dataSource, "_DAY") || dataSource == "APP_DEVICE_DATA_MIN"{
+		SegmentGranularity:=GetSegmentGranularity()
+		contexts := GetContext()
+		tuningCongfig :=GetTuningConfig(dataSource)
+		compaction :=CompactionDay{
+			Type:						"compact",
+			DataSource:					dataSource,
+			SegmentGranularity: 		SegmentGranularity,
+			Interval:					interval,
+			//taskPriority:				100,
+			TuningConfig:				tuningCongfig,
+			Context:					contexts,
+		}
+		bytes, err := json.Marshal(compaction)
+		if err != nil {
+			panic(err)
+		}
+		result := string(bytes)
+		return result
+
+	}else {
+		contexts := GetContext()
+		tuningCongfig :=GetTuningConfig(dataSource)
+		compaction :=Compaction{
+			Type:						"compact",
+			DataSource:					dataSource,
+			Interval:					interval,
+			//taskPriority:				100,
+			TuningConfig:				tuningCongfig,
+			Context:					contexts,
+		}
+		bytes, err := json.Marshal(compaction)
+		if err != nil {
+			panic(err)
+		}
+		result := string(bytes)
+		return result
 	}
-	bytes, err := json.Marshal(compaction)
-	if err != nil {
-		panic(err)
-	}
-	result := string(bytes)
-	return result
 }
 // 初次部署时获取时间
 func GetTaskTnterval(dataSource string) string {
@@ -278,6 +315,21 @@ func GetTaskEndTnterval(dataSource,interval string) string {
 	timStr :=startTime+"/" + endTime + "T00:00:00.000Z"
 
 	return timStr
+}
+//组装GetSegmentGranularity配置
+func GetSegmentGranularity() SegmentGranularity {
+	defer func() {
+		if err := recover(); err != nil {
+			logs.Error("获取tuningConfig时出现错误，错误信息：", err)
+		}
+	}()
+	segmentGranularity := SegmentGranularity{
+			Type:				"period",
+			Period:				"P1D",
+			TimeZone:  			"Asia/Shanghai",
+			Origin: 			"2012-02-01T00:00:00+08:00",
+	}
+	return segmentGranularity
 }
 
 // 解析配置文件，组装TuningConfig
@@ -357,7 +409,7 @@ func GetContext() Context {
 	return context
 }
 
-//提交task
+//提交compact task 进行compact操作
 func SubmitTaskToDruidCompactSegments(){
 	defer func() {
 		if err := recover(); err != nil {
