@@ -308,13 +308,23 @@ func GetTaskEndTnterval(dataSource,interval string) string {
 			logs.Error("获取interval时出现错误，错误信息：", err)
 		}
 	}()
-	startTime :=SegmentsMaxEendTime(dataSource,interval)
+	if strings.HasSuffix(dataSource, "_DAY") || dataSource == "APP_DEVICE_DATA_MIN"{
+		startTime :=SegmentsMaxEendTime(dataSource,interval)
 
-	endTimes,_:=time.ParseInLocation("2006-01-02",startTime[:10], time.Local)
-	endTime:=endTimes.Add(time.Hour * 24).Format("2006-01-02")
-	timStr :=startTime+"/" + endTime + "T00:00:00.000Z"
+		endTimes,_:=time.ParseInLocation("2006-01-02",startTime[:10], time.Local)
+		endTime:=endTimes.Add(time.Hour * 24).Format("2006-01-02")
+		timStr :=startTime+"/" + endTime + "T16:00:00.000Z"
 
-	return timStr
+		return timStr
+	}else {
+		startTime :=SegmentsMaxEendTime(dataSource,interval)
+
+		endTimes,_:=time.ParseInLocation("2006-01-02",startTime[:10], time.Local)
+		endTime:=endTimes.Add(time.Hour * 24).Format("2006-01-02")
+		timStr :=startTime+"/" + endTime + "T00:00:00.000Z"
+
+		return timStr
+	}
 }
 //组装GetSegmentGranularity配置
 func GetSegmentGranularity() SegmentGranularity {
