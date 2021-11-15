@@ -4,9 +4,7 @@
     <list default="true" id="5c333c31-af1f-44a0-9b8b-fea404962eee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tingyun-compact-segment" beforeDir="false" afterPath="$PROJECT_DIR$/tingyun-compact-segment" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +16,16 @@
     <session id="386452735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.4" value="10" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="9" />
+          <entry key="go" value="10" />
           <entry key="ini" value="2" />
           <entry key="log" value="6" />
           <entry key="md" value="2" />
@@ -37,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="9" />
+          <entry key="Go" value="10" />
           <entry key="Ini" value="2" />
           <entry key="Log" value="6" />
           <entry key="Markdown" value="2" />
@@ -47,18 +45,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="4042" />
+          <entry key="go" value="4043" />
           <entry key="ini" value="246" />
-          <entry key="md" value="333" />
+          <entry key="md" value="373" />
           <entry key="sql" value="346" />
           <entry key="yml" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4042" />
+          <entry key="Go" value="4043" />
           <entry key="Ini" value="246" />
-          <entry key="Markdown" value="333" />
+          <entry key="Markdown" value="373" />
           <entry key="SQL" value="346" />
           <entry key="YAML" value="69" />
         </counts>
@@ -74,11 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/utils.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="325" column="21" lean-forward="true" selection-start-line="325" selection-start-column="21" selection-end-line="325" selection-end-column="21" />
+            <state relative-caret-position="250">
+              <caret line="443" selection-start-line="443" selection-end-line="446" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -96,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/compact.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -104,17 +102,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/compact.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="532">
+            <state relative-caret-position="8040">
               <caret line="536" column="702" selection-start-line="536" selection-start-column="72" selection-end-line="536" selection-end-column="702" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -122,11 +120,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
+            <state split_layout="SPLIT">
               <first_editor relative-caret-position="195">
-                <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+                <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/db.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -161,10 +168,10 @@
         <option value="$PROJECT_DIR$/utils/db.go" />
         <option value="$PROJECT_DIR$/schema/init.sql" />
         <option value="$PROJECT_DIR$/compact.go" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/utils/utils.go" />
         <option value="$PROJECT_DIR$/dataSource.yml" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/utils/utils.go" />
       </list>
     </option>
   </component>
@@ -301,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/typeTransition.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -322,30 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compact.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/compact.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="532">
-          <caret line="536" column="702" selection-start-line="536" selection-start-column="72" selection-end-line="536" selection-end-column="702" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -353,17 +329,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utils.go">
+    <entry file="file://$PROJECT_DIR$/compact.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="325" column="21" lean-forward="true" selection-start-line="325" selection-start-column="21" selection-end-line="325" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/compact.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="8040">
+          <caret line="536" column="702" selection-start-line="536" selection-start-column="72" selection-end-line="536" selection-end-column="702" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="443" selection-start-line="443" selection-end-line="446" selection-end-column="52" />
         </state>
       </provider>
     </entry>
