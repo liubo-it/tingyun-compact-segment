@@ -22,7 +22,7 @@ func main() {
 	kingpin.Parse()
 	logs.Info("Listening on  ",utils.GetLoaclIp(),*listenAddress)
 
-	//每分钟执行compact操作
+//	每分钟执行compact操作
 	go func() {
 		ticker := time.NewTicker(time.Minute * 1)
 			for {
@@ -31,6 +31,7 @@ func main() {
 				utils.SubmitTaskToDruidCompactSegments()
 			}
 	}()
+
 	http.ListenAndServe(*listenAddress, nil)
 
 }

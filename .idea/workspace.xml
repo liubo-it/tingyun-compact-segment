@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c333c31-af1f-44a0-9b8b-fea404962eee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compact.go" beforeDir="false" afterPath="$PROJECT_DIR$/compact.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/compact.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/compact.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tingyun-compact-segment" beforeDir="false" afterPath="$PROJECT_DIR$/tingyun-compact-segment" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,49 +20,50 @@
     <session id="386452735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.4" value="10" />
+          <entry key="project.open.time.4" value="11" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="go" value="10" />
           <entry key="ini" value="2" />
-          <entry key="log" value="6" />
+          <entry key="log" value="7" />
           <entry key="md" value="2" />
           <entry key="sql" value="4" />
-          <entry key="yml" value="5" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Go" value="10" />
           <entry key="Ini" value="2" />
-          <entry key="Log" value="6" />
+          <entry key="Log" value="7" />
           <entry key="Markdown" value="2" />
           <entry key="SQL" value="4" />
-          <entry key="YAML" value="5" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="4043" />
-          <entry key="ini" value="246" />
+          <entry key="go" value="4167" />
+          <entry key="ini" value="296" />
           <entry key="md" value="373" />
           <entry key="sql" value="346" />
-          <entry key="yml" value="69" />
+          <entry key="yml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4043" />
-          <entry key="Ini" value="246" />
+          <entry key="Go" value="4167" />
+          <entry key="Ini" value="296" />
           <entry key="Markdown" value="373" />
           <entry key="SQL" value="346" />
-          <entry key="YAML" value="69" />
+          <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -73,8 +80,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/utils.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="456" column="121" selection-start-line="456" selection-start-column="121" selection-end-line="456" selection-end-column="121" />
+            <state relative-caret-position="170">
+              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+              <folding>
+                <element signature="e#15#268#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compact.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,8 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -102,7 +121,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="285">
-                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -112,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="1395">
               <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
             </state>
           </provider>
@@ -132,6 +151,7 @@
       <find>fmt</find>
       <find>taskPriority</find>
       <find>00</find>
+      <find>http</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -147,11 +167,11 @@
         <option value="$PROJECT_DIR$/tools/typeTransition.go" />
         <option value="$PROJECT_DIR$/utils/db.go" />
         <option value="$PROJECT_DIR$/schema/init.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/compact.go" />
         <option value="$PROJECT_DIR$/dataSource.yml" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/utils/utils.go" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -163,7 +183,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="22" />
-    <option name="y" value="27" />
+    <option name="y" value="25" />
     <option name="width" value="1394" />
     <option name="height" value="824" />
   </component>
@@ -172,12 +192,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="tingyun-compact-segment" type="b2602c69:ProjectViewProjectNode" />
               <item name="tingyun-compact-segment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tingyun-compact-segment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tingyun-compact-segment" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tingyun-compact-segment" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,15 +272,15 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="27" width="1394" height="824" extended-state="0" />
+    <frame x="22" y="25" width="1394" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18651363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18651363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2141901" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2141901" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,51 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/compact.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="532">
-          <caret line="536" column="702" selection-start-line="536" selection-start-column="72" selection-end-line="536" selection-end-column="702" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compact.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schema/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -352,10 +332,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/compact.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="128">
+          <caret line="536" column="702" selection-start-line="536" selection-start-column="72" selection-end-line="536" selection-end-column="702" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compact.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/utils.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="456" column="121" selection-start-line="456" selection-start-column="121" selection-end-line="456" selection-end-column="121" />
+        <state relative-caret-position="170">
+          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+          <folding>
+            <element signature="e#15#268#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"gopkg.in/ini.v1"
 	"gopkg.in/yaml.v2"
@@ -102,7 +101,7 @@ func HttpClient(method, url string, body io.Reader) *http.Response {
 	client := &http.Client{}
 	request, err := http.NewRequest(method, url, body)
 	if err != nil {
-		beego.Error(err)
+		logs.Error(err)
 	}
 	request.SetBasicAuth("admin", "nEtben@2_19")
 	if method == "POST" {
@@ -110,8 +109,8 @@ func HttpClient(method, url string, body io.Reader) *http.Response {
 	}
 	resp, err := client.Do(request)
 	if err != nil || resp.StatusCode != 200 {
-		beego.Error(resp)
-		beego.Error("http请求异常，返回值错误", err, "或者返回状态码非200.")
+		logs.Error(resp)
+		logs.Error("http请求异常，返回值错误", err, "或者返回状态码非200.")
 	}
 	return resp
 }
@@ -230,7 +229,7 @@ func FormatSpecBeforePost(dataSource string,interval string) string {
 	}()
 	if strings.HasSuffix(dataSource, "_DAY") || dataSource == "APP_DEVICE_DATA_MIN"{
 		SegmentGranularity:=GetSegmentGranularity()
-		contexts := GetContext()
+		contexts := GetContext(dataSource)
 		tuningCongfig :=GetTuningConfig(dataSource)
 		compaction :=CompactionDay{
 			Type:						"compact",
@@ -249,7 +248,7 @@ func FormatSpecBeforePost(dataSource string,interval string) string {
 		return result
 
 	}else {
-		contexts := GetContext()
+		contexts := GetContext(dataSource)
 		tuningCongfig :=GetTuningConfig(dataSource)
 		compaction :=Compaction{
 			Type:						"compact",
@@ -368,25 +367,25 @@ func GetTuningConfig(dataSource string) TuningConfig {
 	return tuningConfig
 }
 // 解析配置文件，组装context
-func GetContext() Context {
+func GetContext(dataSource string) Context {
 	defer func() {
 		if err := recover(); err != nil {
 			logs.Error("获取context时出现错误，错误信息：", err)
 		}
 	}()
-	xms, err := ParseConfig("jvm", "Xms")
+	xms, err := ParseConfig(dataSource, "Xms")
 	if err != nil {
 		panic(err)
 	}
-	xmx, err := ParseConfig("jvm", "Xmx")
+	xmx, err := ParseConfig(dataSource, "Xmx")
 	if err != nil {
 		panic(err)
 	}
-	direct, err := ParseConfig("jvm", "maxDirectMemorySize")
+	direct, err := ParseConfig(dataSource, "maxDirectMemorySize")
 	if err != nil {
 		panic(err)
 	}
-	processThread, err := ParseConfig("jvm", "processThread")
+	processThread, err := ParseConfig(dataSource, "processThread")
 	if err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func GetContext() Context {
 	if err != nil {
 		panic(err)
 	}
-	mergeThread, err := ParseConfig("jvm", "mergeThread")
+	mergeThread, err := ParseConfig(dataSource, "mergeThread")
 	if err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func GetContext() Context {
 	if err != nil {
 		panic(err)
 	}
-	poolBytes, err := ParseConfig("jvm", "poolBytes")
+	poolBytes, err := ParseConfig(dataSource, "poolBytes")
 	if err != nil {
 		panic(err)
 	}
