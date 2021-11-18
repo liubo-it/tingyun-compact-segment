@@ -14,6 +14,6 @@ APP_NETWORK_DATA_MIN            maxRowsPerSegment:14000000      650MB
 APP_NETWORK_DATA_HOUR           maxRowsPerSegment:15000000      640MB
 ````
 ### 说明   
- -  由于`数据量`变化以及`表结构`变更需要定期维护此表格。
+ -  由于`数据量`动态变化以及`表结构`不定期更改需要定期维护此表格。
  - `xxx`代表当前dataSource数据量小,聚合后行数可以为较大任意值,进行聚合。
 
