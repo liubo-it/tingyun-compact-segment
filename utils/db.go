@@ -13,6 +13,7 @@ import (
 */
 
 
+//获取数据库连接
 func GetMySQLConn() (string, error) {
 	address, err := ParseConfig("mysql", "address")
 	if err != nil {
