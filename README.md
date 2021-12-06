@@ -1,3 +1,13 @@
+# Compact  Segments
+
+###描述
+   
+   用于合并Apache Druid Segments,解决Segment过多而导致查询速度变慢等一系列问题。
+
+### 说明   
+ -  由于`表结构`不定期更改需要定期维护此表格。
+ - `xxx`代表当前Task数据量小,聚合后行数可以为较大任意值,进行聚合。
+ 
 ### Segment File Size
  - `300MB`-`700MB`
  
@@ -16,7 +26,5 @@ APP_NETWORK_DATA_OVERVIEW_HOUR  maxRowsPerSegment:17000000      640MB
 APP_NETWORK_DATA_MIN            maxRowsPerSegment:10000000      450MB
 APP_NETWORK_DATA_HOUR           maxRowsPerSegment:9000000       400MB
 ````
-### 说明   
- -  由于`数据量`动态变化以及`表结构`不定期更改需要定期维护此表格。
- - `xxx`代表当前dataSource数据量小,聚合后行数可以为较大任意值,进行聚合。
+
 

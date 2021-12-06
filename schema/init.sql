@@ -1,9 +1,3 @@
-/*
-	@Title	init.sql
-	@Description 生成compact id 表
-	@Author LiuBo 2021/11/01 10:50
-*/
-
 DROP TABLE  IF EXISTS `DRUID_COMPACT_SEGMENTS_INFO`;
 CREATE TABLE IF NOT EXISTS  `DRUID_COMPACT_SEGMENTS_INFO` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
