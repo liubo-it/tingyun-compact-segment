@@ -1,6 +1,6 @@
 # Compact  Segments
 
-###描述
+### 描述
    
    用于合并Apache Druid Segments,解决Segment过多而导致查询速度变慢等一系列问题。
 
@@ -15,7 +15,7 @@
 ````
     表名                             聚合后的行数               sgement的大小 
     
-APP_UX_DATA_MIN		            maxRowsPerSegment:1500000	    670MB
+APP_UX_DATA_MIN		        maxRowsPerSegment:1500000	670MB
 APP_UX_DATA_HOUR                maxRowsPerSegment:1400000       730MB
 APP_DEVICE_DATA_MIN             maxRowsPerSegment:7000000       644MB
 APP_DEVICE_DATA_HOUR            maxRowsPerSegment:4500000       620MB
